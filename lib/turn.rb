@@ -27,4 +27,4 @@ def input_to_index(number)
     number = number -1
 end
 
-puts input_to_index(5)
+puts input_to_index("5")
