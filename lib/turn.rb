@@ -21,10 +21,10 @@ def valid_move?(board,index)
  end
  valid
 end
-puts valid_move?(board,0)
+# puts valid_move?(board,0)
 
 def input_to_index(number)
     number = number -1
 end
 
-puts input_to_index(1)
+puts input_to_index(5)
