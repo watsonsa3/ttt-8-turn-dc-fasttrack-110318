@@ -9,20 +9,16 @@ end
 
 board = ["X","O","X","O","X","O","X","O","X"]
 
-# display_board (board)
 
-
-def valid_move? (board, index)
-  valid= true
-  index <= 8
-  if board[index] > 8
-    valid = false
-  elsif board [index] < 0
-    valid = false
-  else board [index] = "X","O"
-    valid = false
-  end
+def valid_move?(board,index)
+ valid = true
+ if index>8
+   valid = false
+ elsif index<0
+   valid=false
+ elsif board[index]=="X" || board[index]=="O"
+   valid=false
+ end
+ valid
 end
-
-index = 10
-valid_move?(board,index)
+puts valid_move?(board,0)
