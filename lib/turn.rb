@@ -22,3 +22,9 @@ def valid_move?(board,index)
  valid
 end
 puts valid_move?(board,0)
+
+def input_to_index(number)
+    number = number -1
+end
+
+input_to_index
